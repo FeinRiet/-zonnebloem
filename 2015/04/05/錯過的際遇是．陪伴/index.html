@@ -534,7 +534,23 @@ eval((function(){var b=[70,85,82,76,80,71,87,60,88,89,81,65,90,86,75,66,94,79,74
 
 
 
-  
+  <SCRIPT language=JavaScript>
+<!-- begin
+document.onmousedown=click;
+document.onkeydown=click;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN); window.onmousedown=click;
+if (document.layers) window.captureEvents(Event.KEYDOWN); window.onkeydown=click;
+function click(e){
+if (navigator.appName == 'Netscape'){
+if (e.which != 1){
+alert("是不是連鍵盤都無法使用啦？");
+return false;}}
+if (navigator.appName == "Microsoft Internet Explorer"){
+if (event.button != 1){
+alert("是不是連鍵盤都無法使用啦？");
+return false;}}}
+// end -->
+</SCRIPT>
 
 
 
